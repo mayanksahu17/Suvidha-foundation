@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form </title>
+    <link rel="stylesheet" href="UNIVERSITY_SHORTLIST_FORM.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>UNIVERSITY SHORTLIST FORM</h2>
+        </div>
+        <div class="form">
+            <input type="text" name="name" id="name" placeholder="Your Full Name (As Per Passport)*" required=""
+                class="input1">
+        </div>
+        <div class="form">
+            <input type="email" name="email" id="email" placeholder="Email*" required="" class="input1">
+        </div>
+        <div class="form">
+            <input type="text" name="phone_number" id="phone_number" placeholder="Mobile Number*"
+                pattern="[6789][0-9]{9}" title="Please enter Correct Mobile no." maxlength="10" required=""
+                class="input1">
+        </div>
+        <div class="form">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <select name="exams" id="exams" class="input1">
+                                <option selected="" value="">Select GRE/GMAT. Exam&nbsp;&nbsp;</option>
+                                <option value="None">None</option>
+                                <option value="GRE">GRE</option>
+                                <option value="GMAT">GMAT</option>
+                            </select>
+                        </td>
+                        <td><input type="number" name="total" placeholder="Total" class="input2">
+                        </td>
+                        <td><input type="number" name="quant" placeholder="Quantitative  Reasoning" class="input2">
+                        </td>
+                        <td><input type="number" name="verbal" placeholder="Verbal  Reasoning" class="input2">
+                        </td>
+                        <td><input type="text" name="reason" placeholder="Analytical writing" class="input1">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="form">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <select name="exams1" id="exams1" class="input1">
+                                <option selected="" value="">Select English Prof.
+                                    Exam&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                                <option value="None">None</option>
+                                <option value="TOEFL">TOEFL</option>
+                                <option value="IELTS">IELTS</option>
+                                <option value="PTE">PTE</option>
+                                <option value="Duolingo">Duolingo</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="total1" placeholder="Total" class="input1">
+                        </td>
+                        <td><input type="text" name="read" placeholder="Reading" class="input1">
+                        </td>
+                        <td><input type="text" name="write" placeholder="Writing" class="input1">
+                        </td>
+                        <td><input type="text" name="listen" placeholder="Listening" class="input1">
+                        </td>
+                        <td><input type="text" name="speak" placeholder="Speaking" class="input1">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="form">
+            <select name="country" id="country" class="input1">
+                <option selected="" value="">Country Planning for.. </option>
+                <option value="United States">United States</option>
+                <option value="United Kingdom">United Kingdom(UK)</option>
+                <option value="Australia">Australia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Canada">Canada</option>
+                <option value="Singapore">Singapore</option>
+            </select>
+        </div>
+        <div class="form">
+            <input type="text" name="department" placeholder="Deparment" required="" class="input1">
+        </div>
+        <div class="form">
+            <input type="text" name="course_type" placeholder="Course Preferred.." required="" class="input1" >
+        </div>
+        <div class="form">
+            <input type="text" name="exp" id="exp" placeholder="Job Experience (Duration/Designation)" class="input1">
+        </div>
+
+        <div class="form">
+            <h3 style="margin-left: 30px;">Graduation Information</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Under Graduation Details</th>
+                        <td><input type="text" name="college_name1" placeholder="College Name" required=""
+                                class="input2">
+                        </td>
+                        <td><input type="text" name="percentage1" placeholder="Percentage" required="" class="input2">
+                        </td>
+                        <td><input type="text" name="pass_year1" placeholder="Passing Year" required=""
+                                style="margin:3%;" class="input2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Post Graduation Details</th>
+                        <td><input type="text" name="college_name2" placeholder="College Name" align="center"
+                                class="input2">
+                        </td>
+                        <td><input type="text" name="percentage2" placeholder="Percentage" class="input2">
+                        </td>
+                        <td><input type="text" name="pass_year2" placeholder="Passing Year" class="input2">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="form">
+            <input type="submit" name="submit" id="submit" class="btn" value="Shortlist My University" style="width: 98%;">
+        </div>
+
+    </div>
+</body>
+
+</html>
