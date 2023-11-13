@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --myfont: 'Mulish', sans-serif;
+    --my-btn-font : 'Monteserrat', sans-serif;
+    --lg-lightcolour: linear-gradient(to left,rgba(116,235,213,0.6),rgba(159,172,230,0));
+    --lg-color: linear-gradient(to left,yellow,orange);
+}
+
+body{
+    background-image: url('3.jpg');
+    background-repeat: no-repeat;
+    font-family: var(--myfont);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-width: 100vh;
+    width:100vw; */
+    background-size: cover;
+}
+.container{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2.8px 2.2px rgba(0,0,0,0.034),0 6.7px 5.3px rgba(0,0,0,0.048),0 12.;
+    overflow: hidden;
+    /* width:calc(100vw - 65vw);
+    max-width: 100%; */
+    margin: 50px;
+}
+.header{
+    background: var(--lg-color);
+    padding: 30px 0px;
+}
+.header h2{
+    color:black;
+    font-family: var(--my-btn-font);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.form .btn{
+    background: var(--lg-color);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    display:inline-block;
+    font-family: var(--my-btn-font);
+    font-size: 16px;
+    padding: 15px 15px;
+    margin: 15px;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+div{
+    margin: 15px 10px;
+}
+.input1{
+    display: flex;
+    width: 98%;
+    border: none;
+    padding: 15px;
+    margin: 10px 10px 10px 10px;
+    
+}
+.input2{
+    display:flex;
+    width: 100%;
+    border: none;
+    padding: 15px 15px 15px 90px;
+    margin: 10px 0px 0px 40px;
+}
+th{
+    padding-left: 27px ;
+}
+.form .btn:hover{
+    background: linear-gradient(to right,yellow,orange);
+}
+@media(max-width:998px){
+    .container{
+        width: calc(100vw -35vw);
+        max-width: 100%;
+    }
+}
