@@ -446,3 +446,16 @@ img {
 .carousel-control-prev {
   filter: invert(1) grayscale(100);
 }
+
+
+/* footer SECTION  */
+
+.footer{
+  background-color: #000000;
+  color: #ffffff;
+  padding:5rem;
+}
+
+.social-icons li{
+  padding: 2px 5px;
+}
