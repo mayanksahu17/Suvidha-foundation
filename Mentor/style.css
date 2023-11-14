@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.6rem;
+  font-family: "Roboto Slab", serif;
+}
+
+
+figure {
+  margin: 0;
+}
+
+figure.photo {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+figure.photo * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+figure.photo img {
+  max-width: 100%;
+  position: relative;
+  opacity: 0.4;
+}
+
+figure.photo figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+figure.photo h2 {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  display: inline-block;
+  background: #000000;
+  -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+  transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+  padding: 12px 5px;
+  margin: 0;
+  top: 50%;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+figure.photo h2 span {
+  font-weight: 800;
+}
+
+figure.photo:before {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background: #ffffff;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: rotate(110deg) translateY(-50%);
+  transform: rotate(110deg) translateY(-50%);
+}
+
+figure.photo.blue {
+  background: #123851;
+}
+
+figure.photo.blue h2 {
+  background: #0a212f;
+}
+
+figure.photo.red {
+  background: #581a14;
+}
+
+figure.photo.red h2 {
+  background: #36100c;
+}
+
+figure.photo.yellow {
+  background: #7f5006;
+}
+
+figure.photo.yellow h2 {
+  background: #583804;
+}
+
+figure.photo:hover img,
+figure.photo.hover img {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+figure.photo:hover h2,
+figure.photo.hover h2 {
+  -webkit-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+  transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+}
+
+figure.photo:hover:before,
+figure.photo.hover:before {
+  -webkit-transform: rotate(110deg) translateY(-150%);
+  transform: rotate(110deg) translateY(-150%);
+}
+
+.icons {
+  width: 30px;
+}
+.profile{
+  max-height: 250px;
+}
+.socialbtn{
+  border: 1.6px solid orange;
+}
+.socialbtn:hover{
+  background-color: orange;
+}
+.textname{
+  text-align: center;
+  color:#383a65;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  animation: pulse 5s infinite;
+}
+.textpara:hover,.textname:hover{
+  transform: scale(1.03);
+}
+.textpara{
+  color: rgb(71, 70, 70);
+  text-align:center;
+  font-family: 'Quicksand', sans-serif;
+}
