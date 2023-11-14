@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USA University</title>
+<!-- swiper css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="usa.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -165,8 +167,126 @@
         </div>
     </div>
 
+    <!-- Top universities in USA  -->
+    <!-- CSS to be added -->
+    
+         <div class="top-universities-container swiper mySwiper">
+        <h2>Top universities in USA</h2>
+        <div class="content swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="card-content">
+                    <div class="university-image">
+                        <!-- <img src="/Assets/mit-usa.jpeg" alt=""> -->
+                    </div>
+                </div>
+              </div>
+        </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+
+    </div>
+    
+   
+
+<!-- Students Reviews section -->
+<div class="wrapper">
+    <h1>Our Students Reviews</h1>
+
+    <!-- reviews -->
+    <div class="reviews-card">
+
+        <div class="review">
+            <i id="left-quote" class=" fa fa-quote-left" aria-hidden="true"></i>
+            <div class="avatar"> <img src="https://i.pinimg.com/236x/91/44/da/9144da43a5959822f7647d9925d4de74.jpg"
+                    alt=""> </div>
+            <!-- review by the student -->
+            <div class="text-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, ullam perspiciatis illo suscipit
+                    earum ducimus eum inventore exercitationem saepe nam, at minus nobis cum eligendi!</p>
+                <h4>Olivia</h4>
+                <!-- stars rated -->
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <i id="right-quote" class=" fa fa-quote-left" aria-hidden="true"></i>
+
+        </div>
+
+        <div class="review">
+            <i id="left-quote" class=" fa fa-quote-left" aria-hidden="true"></i>
+            <div class="avatar"> <img src="https://i.pinimg.com/236x/8c/7b/34/8c7b3460922034571f3fbc3bdd828759.jpg"
+                    alt=""> </div>
+            <!-- review by the student -->
+            <div class="text-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, ullam perspiciatis illo suscipit
+                    earum ducimus eum inventore exercitationem saepe nam, at minus nobis cum eligendi!</p>
+                <h4>Jade</h4>
+                <!-- stars rated -->
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <i id="right-quote" class=" fa fa-quote-left" aria-hidden="true"></i>
+
+        </div>
+
+        <div class="review">
+            <i id="left-quote" class=" fa fa-quote-left" aria-hidden="true"></i>
+            <div class="avatar"> <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfbhNvK5hTIA7Cvr0kyy8e7EcOZdSythE6AomlBNIsbRsmJBXGcoQ7kg04dNi00V9u1xQ&usqp=CAU"
+                    alt=""> </div>
+            <!-- review by the student -->
+            <div class="text-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, ullam perspiciatis illo suscipit
+                    earum ducimus eum inventore exercitationem saepe nam, at minus nobis cum eligendi!</p>
+                <h4>Rose</h4>
+                <!-- stars rated -->
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <i id="right-quote" class=" fa fa-quote-left" aria-hidden="true"></i>
+
+        </div>
 
 
+
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
 
 
