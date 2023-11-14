@@ -163,3 +163,16 @@ img {
     font-family: 'Quicksand', sans-serif;
   }
 
+
+  .about{
+    background-color: #FBCEB1;
+    padding: 5rem;
+    color: black;
+  }
+
+  .about-cards{
+    padding-top: 5rem;
+    background: #DAA06D;
+    border-radius: 20px;
+    font-size: 20px;
+}
