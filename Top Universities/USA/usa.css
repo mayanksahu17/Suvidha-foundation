@@ -10,7 +10,10 @@ img {
 .navbar-toggler-icon {
     background-color: #FFA500; /* Change this to the desired color */
 }
-
+.desc{
+  position: absolute;
+  z-index: 10;
+}
 .custom-bg {
     background-color: #eba063; /* Light orange background color */
 }
@@ -141,6 +144,26 @@ padding: 1rem;
     max-width: 1200px;
     width: 95%;
   }
+  .card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card img{
+    border-radius: 9px;
+  }
+  .card-num{
+    position: absolute;
+    z-index: 10;
+    color: white;
+    font-size:  50px;
+    
+  }
+  .card:hover{
+    filter: grayscale(2);
+
+  }
   .slider-wrapper {
     position: relative;
   }
@@ -156,7 +179,7 @@ padding: 1rem;
     display: flex;
     cursor: pointer;
     font-size: 2.2rem;
-    background: #000;
+    background: orange;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -194,7 +217,7 @@ padding: 1rem;
     border: 12px solid rgb(255, 200, 97);
     cursor: pointer;
   }
- 
+
   .container .slider-scrollbar {
     height: 24px;
     width: 100%;
@@ -202,7 +225,7 @@ padding: 1rem;
     align-items: center;
   }
   .slider-scrollbar .scrollbar-track {
-    background: #ccc;
+    background: #cccccc;
     width: 100%;
     height: 2px;
     display: flex;
@@ -215,7 +238,7 @@ padding: 1rem;
   }
   .slider-scrollbar .scrollbar-thumb {
     position: absolute;
-    background: #000;
+    background: #000000;
     top: 0;
     bottom: 0;
     width: 50%;
