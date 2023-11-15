@@ -8,11 +8,11 @@ img {
 } 
 
 .navbar-nav .nav-link.custom-nav-link {
-    color: #ec3211 !important;
+    color: #FFA500 !important;
     font-weight: bold;
 }
 .navbar-toggler-icon {
-  background-color:  #FFA500; 
+  background-color:  #FFA500 !important; 
 }
  
 
@@ -458,13 +458,13 @@ img {
 
 
 @import url('https://fonts.googleapis.com/css2?family=poppins:200,300,400,500,600,700.800,900&display=swap');
-*
+/* 
 {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    font-family: 'poppins', sans sarif;
-}
+ */
 .contactus-backround
 {
 /* background:linear-Gradient( 90deg, #0e3959 0%, #0e3959 30%, #03a9f5 30%, #03a9f5 100%); */
