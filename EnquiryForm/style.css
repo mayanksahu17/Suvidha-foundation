@@ -1,12 +1,12 @@
-body {
+body { 
     font-family: Arial, sans-serif;
-    background-color: rgb(231, 177, 8);
+    background-color: rgb(255, 255, 255, .8);
     margin: 0;
     padding: 0;
 }
 
 .form-container {
-    max-width: 400px; /* Adjust the max-width here */
+    max-width: 400px; 
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
@@ -52,10 +52,10 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Responsive layout */
+
 @media screen and (max-width: 600px) {
     .form-container {
-        max-width: 100%; /* Full width on smaller screens */
+        max-width: 100%; 
         padding: 10px;
     }
 
@@ -69,4 +69,5 @@ button:hover {
     button {
         grid-column: span 1;
     }
-}
+} 
+

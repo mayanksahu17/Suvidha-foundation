@@ -17,22 +17,6 @@ img {
 .custom-bg {
     background-color: #eba063; /* Light orange background color */
 }
-img {
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
-} 
-.navbar-nav .nav-link.custom-nav-link {
-    color: #FFA500 !important;
-    font-weight: bold;
-}
-.navbar-toggler-icon {
-    background-color: #FFA500; /* Change this to the desired color */
-}
-
-.custom-bg {
-    background-color: #eba063; /* Light orange background color */
-}
 .wrapper{
 
     width: 100%;

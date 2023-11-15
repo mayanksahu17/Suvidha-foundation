@@ -6,10 +6,16 @@ img {
     height: 550px;
     object-fit: cover;
 } 
+
 .navbar-nav .nav-link.custom-nav-link {
-    color: #FFA500 !important;
+    color: #ec3211 !important;
     font-weight: bold;
 }
+.navbar-toggler-icon {
+  background-color:  #FFA500; 
+}
+ 
+
 
 /* meet our mentor */
 .heading {
