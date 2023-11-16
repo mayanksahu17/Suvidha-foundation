@@ -343,7 +343,7 @@ img {
   font-family: "Poppins", sans-serif;
 }
 .service-section {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   display: grid;
   place-items: center;
