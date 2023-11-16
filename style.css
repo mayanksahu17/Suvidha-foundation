@@ -172,7 +172,8 @@ img {
 
   .about{
     background-color: #FBCEB1;
-    padding: 5rem;
+    padding: 2rem;
+    text-align: justify;
     color: black;
   }
 
