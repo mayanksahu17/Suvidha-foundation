@@ -1,3 +1,43 @@
+// Accomplishment section
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    grabCursor: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        // When window width is >= 992px (large screens)
+        992: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+        },
+        // When window width is >= 768px and < 992px (medium screens)
+        768: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        // When window width is < 768px (small screens)
+        0: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+        }
+      }
+     
+    
+  });
+  
+
+
 const initSlider = () => {
     const imageList = document.querySelector(".slider-wrapper .image-list");
     const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
