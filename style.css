@@ -169,9 +169,6 @@ figure.photo.hover:before {
 .profile {
   max-height: 250px;
 }
-/* .socialbtn {
-  border: 1.6px solid orange;
-} */
 .socialbtn:hover {
   background-color: orange;
 }
@@ -240,7 +237,7 @@ color: rgba(9, 9, 9, 0.8);
 }
 
 
-/* Styles for small screens */
+/* Styles for small screens 780*/
 @media (max-width: 780px) {
 .coro-prev,
 .coro-next {
