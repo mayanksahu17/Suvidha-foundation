@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UK University</title>
+    <title>Germany University</title>
+<!-- swiper css -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="uk.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-beta3/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-beta3/js/bootstrap.min.js"></script>
-
+  
+    <link rel="stylesheet" href="germany.css">
 </head>
 
 <body>
@@ -95,7 +98,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 p-4">
                 <div class="d-flex flex-column h-100">
-                    <h3 class="mb-auto">Explore UK</h3>
+                    <h3 class="mb-auto">Explore Germany</h3>
                     <p class="mt-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illo perspiciatis
                         vitae reiciendis ea labore dignissimos, tempora inventore molestias exercitationem repellat
                         nulla assumenda corrupti? Voluptatem quo molestiae assumenda distinctio nesciunt!</p>
@@ -108,7 +111,7 @@
             </div>
         </div>
 
-        <!-- Repeat the pattern for other sections as well -->
+         
 
         <!-- Second section -->
         <div class="row align-items-center custom-bg">
@@ -127,7 +130,6 @@
             </div>
         </div>
 
-        <!-- Repeat the pattern for other sections as well -->
 
         <!-- Third section -->
         <div class="row align-items-center">
@@ -146,7 +148,7 @@
             </div>
         </div>
 
-        <!-- Repeat the pattern for other sections as well -->
+         
 
         <!-- Fourth section -->
         <div class="row align-items-center custom-bg">
@@ -169,9 +171,10 @@
 
 
 
+    
     <!-- Top universities in USA  -->
     <div>
-        <h2 class="uni-heading">Top Universities in UK</h2>
+        <h2 class="uni-heading">Top Universities in USA</h2>
         <div class="top-uni-wrapper">
         <div class="container">
                    
@@ -226,12 +229,14 @@
       </div>
     </div>
     </div>
+    
+    
+    
 
+    
+   
 
-
-
-
-    <!-- Students Reviews section -->
+<!-- Students Reviews section -->
 <div class="wrapper">
     <h1>Our Students Reviews</h1>
 
@@ -309,73 +314,72 @@
 
     </div>
 </div>
+
+
+<script>
+    const initSlider = () => {
+    const imageList = document.querySelector(".slider-wrapper .image-list");
+    const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+    const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
+    const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+    const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
     
-    
-
-
-
-    <script>
-        const initSlider = () => {
-        const imageList = document.querySelector(".slider-wrapper .image-list");
-        const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
-        const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
-        const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
-        const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+    // Handle scrollbar thumb drag
+    scrollbarThumb.addEventListener("mousedown", (e) => {
+        const startX = e.clientX;
+        const thumbPosition = scrollbarThumb.offsetLeft;
+        const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
         
-        // Handle scrollbar thumb drag
-        scrollbarThumb.addEventListener("mousedown", (e) => {
-            const startX = e.clientX;
-            const thumbPosition = scrollbarThumb.offsetLeft;
-            const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+        // Update thumb position on mouse move
+        const handleMouseMove = (e) => {
+            const deltaX = e.clientX - startX;
+            const newThumbPosition = thumbPosition + deltaX;
+            // Ensure the scrollbar thumb stays within bounds
+            const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+            const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
             
-            // Update thumb position on mouse move
-            const handleMouseMove = (e) => {
-                const deltaX = e.clientX - startX;
-                const newThumbPosition = thumbPosition + deltaX;
-                // Ensure the scrollbar thumb stays within bounds
-                const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
-                const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
-                
-                scrollbarThumb.style.left = `${boundedPosition}px`;
-                imageList.scrollLeft = scrollPosition;
-            }
-            // Remove event listeners on mouse up
-            const handleMouseUp = () => {
-                document.removeEventListener("mousemove", handleMouseMove);
-                document.removeEventListener("mouseup", handleMouseUp);
-            }
-            // Add event listeners for drag interaction
-            document.addEventListener("mousemove", handleMouseMove);
-            document.addEventListener("mouseup", handleMouseUp);
-        });
-        // Slide images according to the slide button clicks
-        slideButtons.forEach(button => {
-            button.addEventListener("click", () => {
-                const direction = button.id === "prev-slide" ? -1 : 1;
-                const scrollAmount = imageList.clientWidth * direction;
-                imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
-            });
-        });
-         // Show or hide slide buttons based on scroll position
-        const handleSlideButtons = () => {
-            slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
-            slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
+            scrollbarThumb.style.left = `${boundedPosition}px`;
+            imageList.scrollLeft = scrollPosition;
         }
-        // Update scrollbar thumb position based on image scroll
-        const updateScrollThumbPosition = () => {
-            const scrollPosition = imageList.scrollLeft;
-            const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
-            scrollbarThumb.style.left = `${thumbPosition}px`;
+        // Remove event listeners on mouse up
+        const handleMouseUp = () => {
+            document.removeEventListener("mousemove", handleMouseMove);
+            document.removeEventListener("mouseup", handleMouseUp);
         }
-        // Call these two functions when image list scrolls
-        imageList.addEventListener("scroll", () => {
-            updateScrollThumbPosition();
-            handleSlideButtons();
+        // Add event listeners for drag interaction
+        document.addEventListener("mousemove", handleMouseMove);
+        document.addEventListener("mouseup", handleMouseUp);
+    });
+    // Slide images according to the slide button clicks
+    slideButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const direction = button.id === "prev-slide" ? -1 : 1;
+            const scrollAmount = imageList.clientWidth * direction;
+            imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
         });
+    });
+     // Show or hide slide buttons based on scroll position
+    const handleSlideButtons = () => {
+        slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
+        slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
     }
-    window.addEventListener("resize", initSlider);
-    window.addEventListener("load", initSlider);
-    </script>
+    // Update scrollbar thumb position based on image scroll
+    const updateScrollThumbPosition = () => {
+        const scrollPosition = imageList.scrollLeft;
+        const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+        scrollbarThumb.style.left = `${thumbPosition}px`;
+    }
+    // Call these two functions when image list scrolls
+    imageList.addEventListener("scroll", () => {
+        updateScrollThumbPosition();
+        handleSlideButtons();
+    });
+}
+window.addEventListener("resize", initSlider);
+window.addEventListener("load", initSlider);
+</script>
+
+
 
 </body>
 
