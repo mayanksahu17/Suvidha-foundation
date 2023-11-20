@@ -48,10 +48,11 @@ figure {
       width: 20px;
       height: 20px;
   }
-  .boxes{
-    width:145px;
-  }
 
+}
+.mentorcard{
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 figure.photo {
@@ -168,6 +169,11 @@ figure.photo.hover:before {
 }
 .profile {
   max-height: 250px;
+}
+.socialbtn {
+  border: 1.6px solid orange;
+  padding: 1.3rem;
+  border-radius: 4px;
 }
 .socialbtn:hover {
   background-color: orange;
