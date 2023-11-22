@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@100&family=Rubik:ital,wght@1,600&display=swap');
 img {
   width: 100%;
   height: 550px;
@@ -10,8 +11,9 @@ img {
 }
 
 .navbar-nav .nav-link.custom-nav-link {
-  color: #ffa500 !important;
+  color: #E68A43 !important;
   font-weight: bold;
+  font-family: 'Rubik', sans-serif;
 }
 .navbar-toggler-icon {
   background-color: #ffa500 !important;
@@ -766,7 +768,8 @@ color: #1f194c;
 margin: 1em 0;
 }
 .service-p {
-color: #575a7b;
+font-family: 'Oswald', sans-serif;
+color: #000000;
 font-size: 15px;
 line-height: 1.6;
 letter-spacing: 0.03em;
