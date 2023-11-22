@@ -1829,6 +1829,46 @@
         </div>
     </div>
 
+     <!-- ---Floating window--- -->
+
+    <!-- Floating Message Icon -->
+    <div class="floating-icon-container" data-bs-toggle="modal" data-bs-target="#messageModal">
+        <div class="floating-icon">&#9993;</div>
+    </div> 
+    <!-- Message Form Modal -->
+    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="messageModalLabel">Send a Message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Message Form -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Enter your name (Required)</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Enter your email address (Required)</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Enter your phone number (Required)</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Enter your message</label>
+                            <textarea class="form-control" id="message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- contact us -->
