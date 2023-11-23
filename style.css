@@ -1,3 +1,9 @@
+@font-face{
+    font-family:"helvetica";
+    src:url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("woff"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("opentype"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
+}
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap");
@@ -194,10 +200,12 @@ figure.photo.hover:before {
 .textpara {
   color: rgb(71, 70, 70);
   text-align: center;
-  font-family: "Quicksand", sans-serif;
+  font-family: helvetica;
+  /* font-family: "Quicksand", sans-serif; */
 }
 
 .about {
+  font-family: helvetica;
   background-color: #fbceb1;
   padding: 2rem;
   text-align: justify;
@@ -216,7 +224,8 @@ figure.photo.hover:before {
 
 /* top universities CSS */
 .fw-bold {
-  font-family: Roboto Slab;
+  font-family: helvetica;
+  /* font-family: Roboto Slab; */
 }
 .testimonial-slider {
 background-color: #ecaf93;
@@ -293,7 +302,8 @@ color: rgba(9, 9, 9, 0.8);
 
 
 :root {
---font: "Roboto", sans-serif;
+  --font : "helvetica";
+/* --font: "Roboto", sans-serif; */
 --fontOrigin: 1rem;     /* 16px */
 --fontSmall: 0.625em;   /* 10px */
 --fontMedium: 0.875em;  /* 14px */
