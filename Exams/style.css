@@ -1,0 +1,68 @@
+.outer-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background: #f5f5dc;
+    flex-direction: column;
+    gap: 2rem;
+}
+.exam-image{
+    max-width: 100%;
+    overflow-y: hidden;
+    height:10rem;
+    background-image: url("../Assets/gre-img.jpg");
+    /* filter: blur(); */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 2rem;
+    font-size: 3rem;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content-head{
+    color:brown;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.inner-text-container{
+    padding: 2rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.text-content-2,.text-content{
+    color:black;
+    font-size: 1.1rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+.reg-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(101, 165, 4);
+    color:whitesmoke;
+    padding: 1rem;
+}
+@media screen and (max-width: 700px){
+    .outer-text-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+} 
+@media screen and (max-width: 400px){
+    .content-head{
+        font-size: 1.2rem;
+    }
+    .reg-btn{
+        font-size:1.1rem;
+    }
+} 
