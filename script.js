@@ -102,6 +102,45 @@ var swiper = new Swiper(".mySwiper", {
      
     
   });
+
+
+ 
+    // JavaScript to handle form submission
+    document.getElementById('messageForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Collect form data
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            message: document.getElementById('message').value
+        };
+
+        // Post data to the endpoint using fetch API
+        fetch('https://sheetdb.io/api/v1/14wp4y5xmd7be', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                data: [formData]
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Form data sent:', data);
+            // Handle success or any other operations after sending the data
+            // For example, close the modal or show a success message
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            // Handle errors if the data couldn't be sent
+        });
+    });
+
+
   
   
   
