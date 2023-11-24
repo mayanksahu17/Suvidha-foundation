@@ -165,8 +165,69 @@ var swiper = new Swiper(".mySwiper", {
         });
     });
 
+    // script for Enquiry form 
 
+    document.getElementById('enquiryForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      const submitText = document.querySelector('.submit-text');
+      const loadingIcon = document.querySelector('.loading-icon');
   
+      // Show the loading icon and hide the submit text
+      submitText.classList.add('d-none');
+      loadingIcon.classList.remove('d-none');
+    
+      
+      EnquiryFormData = {
+        fullName : document.getElementById('fullName').value,
+        placeOfBirth : document.getElementById('placeOfBirth').value,
+        fullAddress:  document.getElementById('fullAddress').value,
+        nationality:  document.getElementById('nationality').value,
+        cityCountry:  document.getElementById('cityCountry').value,
+        gender : document.getElementById('gender').value,
+        email : document.getElementById('email').value,
+        phoneNumber : document.getElementById('phoneNumber').value,
+      }
+    
+
+      fetch('	https://sheetdb.io/api/v1/y9mr58hmb0fmp', {
+        method : 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        data: [EnquiryFormData]
+    })
+      })
+      .then(response=> response.json())
+      .then(data =>{
+        submitText.classList.remove('d-none');
+        loadingIcon.classList.add('d-none');
+        console.log('Form data sent:', data)
+
+        document.getElementById('fullName').value  = ""
+        document.getElementById('placeOfBirth').value = ""
+        document.getElementById('fullAddress').value = ""
+
+        document.getElementById('nationality').value = ""
+
+        document.getElementById('cityCountry').value = ""
+
+        document.getElementById('gender').value = ""
+            
+        document.getElementById('email').value = ""
+              
+        document.getElementById('phoneNumber').value = ""
+        alert('Your Message has been submitted successfully.');
+      
+      }).catch(error => {
+        console.error('Error:', error);
+         // Hide the loading icon and show the submit text again in case of an error
+         submitText.classList.remove('d-none');
+         loadingIcon.classList.add('d-none');
+
+        // Handle errors if the data couldn't be sent
+    });
   
-  
- 
+    })
