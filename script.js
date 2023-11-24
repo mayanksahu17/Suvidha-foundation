@@ -109,6 +109,16 @@ var swiper = new Swiper(".mySwiper", {
     document.getElementById('messageForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the default form submission
 
+
+    const submitButton = document.querySelector('.btn-primary');
+    const submitText = document.querySelector('.submit-text');
+    const loadingIcon = document.querySelector('.loading-icon');
+
+    // Show the loading icon and hide the submit text
+    submitText.classList.add('d-none');
+    loadingIcon.classList.remove('d-none');
+
+
         // Collect form data
         const formData = {
             name: document.getElementById('name').value,
@@ -116,7 +126,9 @@ var swiper = new Swiper(".mySwiper", {
             phone: document.getElementById('phone').value,
             message: document.getElementById('message').value
         };
-
+        if (!formData.phone) {
+          formData.phone = null 
+        }
         // Post data to the endpoint using fetch API
         fetch('https://sheetdb.io/api/v1/14wp4y5xmd7be', {
             method: 'POST',
@@ -131,11 +143,24 @@ var swiper = new Swiper(".mySwiper", {
         .then(response => response.json())
         .then(data => {
             console.log('Form data sent:', data);
+            submitText.classList.remove('d-none');
+            loadingIcon.classList.add('d-none');
+
             // Handle success or any other operations after sending the data
             // For example, close the modal or show a success message
+            document.getElementById('name').value = ""
+            document.getElementById('email').value = ""
+            document.getElementById('phone').value = ""
+            document.getElementById('message').value = ""
+            alert('Your Message has been submitted successfully.');
+
         })
         .catch(error => {
             console.error('Error:', error);
+             // Hide the loading icon and show the submit text again in case of an error
+             submitText.classList.remove('d-none');
+             loadingIcon.classList.add('d-none');
+
             // Handle errors if the data couldn't be sent
         });
     });
