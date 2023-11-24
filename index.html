@@ -1846,12 +1846,12 @@
         <div class="floating-icon">&#9993;</div>
     </div> 
     <!-- Message Form Modal -->
-   <!-- Your HTML form -->
+   
 <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="messageModalLabel" style="font-family: helvetica;">Send a Message</h5>
+                <h5 class="modal-title" id="messageModalLabel" style="font-family: helvetica;">Send a Message</h5>  
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -1873,7 +1873,13 @@
                         <label for="message" class="form-label">Enter your message</label>
                         <textarea class="form-control" id="message"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="font-family: helvetica;">Submit</button>
+                    <!-- <button type="submit" class="btn btn-primary" style="font-family: helvetica;">Submit</button> -->
+                    <button type="submit" class="btn btn-primary" style="font-family: helvetica;">
+                        <span class="submit-text">Submit</span>
+                        <span class="loading-icon d-none">
+                            <i class="fas fa-spinner fa-spin"></i> <!-- Assuming you use Font Awesome for icons -->
+                        </span>
+                    </button>   
                 </form>
             </div>
         </div>
@@ -1897,14 +1903,15 @@
                     <form>
                         <div class="form-group">
                             <label for="firstName">First Name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="John">
+                            <input type="text" class="form-control" id="name" placeholder="John">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="text" class="form-control" id="email" placeholder="johndoe@email.com">
                         </div>
+                        
                         <div class="form-group">
-                            <label for="message">Message</label>
+                            <label for="message">message</label>
                             <textarea class="form-control" id="message" rows="5"
                                 placeholder="Write your message here..."></textarea>
                         </div>
