@@ -177,7 +177,7 @@ var swiper = new Swiper(".mySwiper", {
       submitText.classList.add('d-none');
       loadingIcon.classList.remove('d-none');
     
-      
+      // data form 
       EnquiryFormData = {
         fullName : document.getElementById('fullName').value,
         placeOfBirth : document.getElementById('placeOfBirth').value,
