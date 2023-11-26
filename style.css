@@ -17,12 +17,12 @@ img {
 }
 
 .custom-nav-link {
-  color: #E68A43;
+  color: #FFA500 !important;
   font-weight: bold;
-  font-family: 'Rubik', sans-serif;
 }
 .custom-nav-link:hover{
-  color: brown;
+color: brown !important;
+font-weight: bold;
 }
 .navbar-toggler-icon {
   background-color: #ffa500 !important;
