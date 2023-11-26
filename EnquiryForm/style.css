@@ -1,6 +1,6 @@
 body { 
     font-family: Arial, sans-serif;
-    background-color: rgb(255, 255, 255, .8);
+    background-color: rgba(245, 227, 227, 0.8);
     margin: 0;
     padding: 0;
 }
@@ -8,7 +8,7 @@ body {
 .form-container {
     max-width: 400px; 
     margin: 50px auto;
-    background-color: #fff;
+    background-color: #f49d9d;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -17,6 +17,7 @@ body {
 form {
     display: grid;
     gap: 10px;
+    
 }
 
 label {
