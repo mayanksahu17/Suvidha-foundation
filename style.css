@@ -16,10 +16,13 @@ img {
   object-fit: cover;
 }
 
-.navbar-nav .nav-link.custom-nav-link {
-  color: #E68A43 !important;
+.custom-nav-link {
+  color: #FFA500 !important;
   font-weight: bold;
-  font-family: 'Rubik', sans-serif;
+}
+.custom-nav-link:hover{
+color: brown !important;
+font-weight: bold;
 }
 .navbar-toggler-icon {
   background-color: #ffa500 !important;
@@ -839,7 +842,7 @@ color: #f0f0f0;
 .testimonial-container {
   width: 100%;
   background: #fbceb1;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 .p-comm {
   font-size: 0.9rem;
