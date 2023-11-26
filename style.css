@@ -17,21 +17,11 @@ img {
   object-fit: cover;
 }
 
-<<<<<<< HEAD
-.custom-nav-link {
-  color: #FFA500 !important;
-  font-weight: bold;
-}
-.custom-nav-link:hover{
-color: brown !important;
-font-weight: bold;
-=======
 .navbar-nav .nav-link.custom-nav-link {
   color: #D8A883 !important;
   /* color: #E68A43 !important; */
   font-weight: bold;
   font-family: display;
->>>>>>> a658625 (Fonts, Background colors, opacity has been updated)
 }
 .navbar-toggler-icon {
   background-color: #D8A883 !important;
@@ -219,16 +209,10 @@ figure.photo.hover:before {
 }
 
 .about {
-<<<<<<< HEAD
-  font-family: helvetica;
-  background-color: #fbceb1;
-  padding: 5rem;
-=======
   font-family: display;
   background-color: #D8A883;
   /* background-color: #fbceb1; */
   padding: 2rem;
->>>>>>> a658625 (Fonts, Background colors, opacity has been updated)
   text-align: justify;
   color: black;
   line-height: 1.2; /* Adjust the line-height as needed */
