@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding: 20px;
+      background-color: #e3ad96;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #e3ad96;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    /* Style for form groups */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    /* Style for submit button */
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Application Form</h2>
+  <form>
+    <!-- Personal Details Section -->
+    <div class="form-group">
+      <h4>1) Personal Details</h4>
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select class="form-control" id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone No:</label>
+      <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" required>
+      <small class="form-text text-muted">Please enter a 10-digit phone number.</small>
+    </div>
+
+    <!-- GRE Scores Section -->
+    <div class="form-group">
+      <h4>2) GRE Scores</h4>
+      <label for="testTaken">GRE Test Taken?</label>
+      <select class="form-control" id="testTaken" name="testTaken" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="greQuant">GRE Quant:</label>
+      <input type="text" class="form-control" id="greQuant" name="greQuant">
+    </div>
+    <div class="form-group">
+      <label for="greVerbal">GRE Verbal:</label>
+      <input type="text" class="form-control" id="greVerbal" name="greVerbal">
+    </div>
+    <div class="form-group">
+      <label for="greAwa">GRE AWA:</label>
+      <input type="text" class="form-control" id="greAwa" name="greAwa">
+    </div>
+
+    <!-- English Scores Section -->
+    <div class="form-group">
+      <h4>3) English Scores</h4>
+      <label for="ielts">IELTS:</label>
+      <input type="text" class="form-control" id="ielts" name="ielts">
+    </div>
+    <div class="form-group">
+      <label for="toefl">TOEFL:</label>
+      <input type="text" class="form-control" id="toefl" name="toefl">
+    </div>
+
+    <!-- Academic Record Section -->
+    <div class="form-group">
+      <h4>4) Academic Record</h4>
+      <label for="gpaScale">GPA Scale:</label>
+      <input type="text" class="form-control" id="gpaScale" name="gpaScale">
+    </div>
+    <div class="form-group">
+      <label for="yourGpa">Your GPA:</label>
+      <input type="text" class="form-control" id="yourGpa" name="yourGpa">
+    </div>
+    <div class="form-group">
+      <label for="topperGpa">Topper GPA:</label>
+      <input type="text" class="form-control" id="topperGpa" name="topperGpa">
+    </div>
+
+    <!-- Undergrad Details Section -->
+    <div class="form-group">
+      <h4>5) Undergrad Details</h4>
+      <label for="undergradSchool">Undergrad School:</label>
+      <input type="text" class="form-control" id="undergradSchool" name="undergradSchool">
+    </div>
+    <div class="form-group">
+      <label for="undergradMajor">Undergrad Major:</label>
+      <input type="text" class="form-control" id="undergradMajor" name="undergradMajor">
+    </div>
+    <div class="form-group">
+      <label for="graduationYear">Year of Graduation:</label>
+      <input type="text" class="form-control" id="graduationYear" name="graduationYear">
+    </div>
+
+    <!-- Target Course Section -->
+    <div class="form-group">
+      <h4>6) Target Course</h4>
+      <label for="postgradMajor">Postgrad Major:</label>
+      <input type="text" class="form-control" id="postgradMajor" name="postgradMajor">
+    </div>
+
+    <!-- Additional Info Section -->
+    <div class="form-group">
+      <h4>7) Additional Info</h4>
+      <label for="enrollmentTerm">Which term are you applying for?</label>
+      <select class="form-control" id="enrollmentTerm" name="enrollmentTerm">
+        <option value="fall">Fall</option>
+        <option value="spring">Spring</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="enrollmentYear">Target Year for Enrollment:</label>
+      <input type="text" class="form-control" id="enrollmentYear" name="enrollmentYear">
+    </div>
+    <div class="form-group">
+      <label for="dreamSchool">Select Dream School:</label>
+      <input type="text" class="form-control" id="dreamSchool" name="dreamSchool">
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
