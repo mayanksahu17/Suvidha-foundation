@@ -1,31 +1,31 @@
-@font-face{
+/* @font-face{
     font-family:"helvetica";
     src:url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("woff"),
     url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("opentype"),
     url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
-}
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+} */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@100&family=Rubik:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@100&family=Rubik:ital,wght@1,600&display=swap'); */
 img {
   width: 100%;
   height: 550px;
   object-fit: cover;
 }
 
-.custom-nav-link {
-  color: #FFA500 !important;
+.navbar-nav .nav-link.custom-nav-link {
+  color: #D8A883 !important;
+  /* color: #E68A43 !important; */
   font-weight: bold;
-}
-.custom-nav-link:hover{
-color: brown !important;
-font-weight: bold;
+  font-family: display;
 }
 .navbar-toggler-icon {
-  background-color: #ffa500 !important;
+  background-color: #D8A883 !important;
+  /* background-color: #ffa500 !important; */
 }
 
 /* meet our mentor */
@@ -35,7 +35,7 @@ font-weight: bold;
   justify-content: center;
   align-items: center;
   margin-bottom: 1.6rem;
-  font-family: "Roboto Slab", serif;
+  font-family: display;
 }
 
 figure {
@@ -67,7 +67,7 @@ figure {
 }
 
 figure.photo {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: display;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -182,7 +182,8 @@ figure.photo.hover:before {
   max-height: 250px;
 }
 .socialbtn {
-  border: 1.6px solid orange;
+  border: 1.6px solid #D8A883;
+  /* border: 1.6px solid orange; */
   padding: 1.3rem;
   border-radius: 4px;
 }
@@ -192,7 +193,7 @@ figure.photo.hover:before {
 .textname {
   text-align: center;
   color: #383a65;
-  font-family: "Quicksand", sans-serif;
+  font-family: display;
   font-weight: 700;
   animation: pulse 5s infinite;
 }
@@ -203,14 +204,15 @@ figure.photo.hover:before {
 .textpara {
   color: rgb(71, 70, 70);
   text-align: center;
-  font-family: helvetica;
+  font-family: display;
   /* font-family: "Quicksand", sans-serif; */
 }
 
 .about {
-  font-family: helvetica;
-  background-color: #fbceb1;
-  padding: 5rem;
+  font-family: display;
+  background-color: #D8A883;
+  /* background-color: #fbceb1; */
+  padding: 2rem;
   text-align: justify;
   color: black;
   line-height: 1.2; /* Adjust the line-height as needed */
@@ -232,15 +234,17 @@ figure.photo.hover:before {
 
 /* top universities CSS */
 .fw-bold {
-  font-family: helvetica;
+  font-family: display;
   /* font-family: Roboto Slab; */
 }
 .testimonial-slider {
-background-color: #ecaf93;
+  background-color: #D8A883;
+/* background-color: #ecaf93; */
 padding: 2em 2em 2em;
 }
 .testimonial-title {
-color: #af8266;
+  color: #D8A883;
+/* color: #af8266; */
 }
 .testimonial-title h2 {
 padding-left: 0.2em;
@@ -310,7 +314,7 @@ color: rgba(9, 9, 9, 0.8);
 
 
 :root {
-  --font : "helvetica";
+  --font : "display";
 /* --font: "Roboto", sans-serif; */
 --fontOrigin: 1rem;     /* 16px */
 --fontSmall: 0.625em;   /* 10px */
@@ -746,7 +750,7 @@ bottom: 0;
 padding: 0;
 margin: 0;
 box-sizing: border-box;
-font-family: "Poppins", sans-serif;
+font-family: display;
 }
 .service-section {
 /* height: 100vh; */
@@ -755,7 +759,8 @@ display: grid;
 place-items: center;
 }
 .service-section-heading {
-color: #daa06d;
+  color: #D8A883;
+/* color: #daa06d; */
 margin-bottom: 50px;
 }
 .service-row {
@@ -771,7 +776,8 @@ text-align: center;
 width: 100%;
 height: 100%;
 padding: 2em 1.5em;
-background: linear-gradient(#ffffff 50%, #daa06d 50%);
+background: linear-gradient(#ffffff 50%, #D8A883 50%);
+/* background: linear-gradient(#ffffff 50%, #daa06d 50%); */
 background-size: 100% 200%;
 background-position: 0 2.5%;
 border-radius: 5px;
@@ -786,14 +792,15 @@ color: #1f194c;
 margin: 1em 0;
 }
 .service-p {
-font-family: 'Oswald', sans-serif;
+font-family: display;
 color: #000000;
 font-size: 15px;
 line-height: 1.6;
 letter-spacing: 0.03em;
 }
 .service-icon-wrapper {
-background-color: #daa06d;
+  background-color: #D8A883;
+/* background-color: #daa06d; */
 position: relative;
 margin: auto;
 font-size: 30px;
@@ -846,7 +853,8 @@ color: #f0f0f0;
 }
 .testimonial-container {
   width: 100%;
-  background: #fbceb1;
+  background: #D8A883;
+  /* background: #fbceb1; */
   margin-top: 20px;
 }
 .p-comm {
@@ -854,7 +862,8 @@ color: #f0f0f0;
   gap: 0.1rem;
 }
 .head-test {
-  color: rgb(204, 134, 4);
+  background-color: #D8A883;
+  /* color: rgb(204, 134, 4); */
   font-weight: bold;
 }
 .core-team {
@@ -863,7 +872,8 @@ color: #f0f0f0;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: rgba(227, 194, 168, 1);
+  background: #D8A883;
+  /* background: rgba(227, 194, 168, 1); */
 }
 
 .card-core-team {
@@ -1106,8 +1116,8 @@ color: #f0f0f0;
 /* Student accomplishment  */
 
 .custom-container {
-  /* background: #f7eae4; */
-  background: #fbceb1;
+ background: #D8A883;
+  /* background: #fbceb1; */
 }
 
 .sec-data {
@@ -1118,11 +1128,13 @@ color: #f0f0f0;
 }
 .uperwaliheading {
   color: #a06e6a;
-  font-family: Roboto + Slab;
+  font-family: display;
 }
 .headinghai {
-  font-family: Agbalumo;
-  color: #000;
+  font-family: display;
+  font-weight: 800;
+  color: #a06e6a;
+  /* color: #000; */
 }
 
 .swiper-custom {
@@ -1476,4 +1488,6 @@ background-size:100%;
 }
 
 /*************footer End*****************/
+
+
 
