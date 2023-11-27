@@ -862,7 +862,7 @@ color: #f0f0f0;
   gap: 0.1rem;
 }
 .head-test {
-  background-color: #D8A883;
+  /* background-color: #D8A883; */
   /* color: rgb(204, 134, 4); */
   font-weight: bold;
 }
@@ -1127,7 +1127,7 @@ color: #f0f0f0;
   align-items: center;
 }
 .uperwaliheading {
-  color: #a06e6a;
+  /* color: #a06e6a; */
   font-family: display;
 }
 .headinghai {
@@ -1491,3 +1491,298 @@ background-size:100%;
 
 
 
+/* special section Hemant below about us  */
+/* .resourse-section .heading{
+  margin-top: 30px;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.resourse-section .card-container {
+  background-color: #efeeee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+   
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 0px;
+}
+
+.resourse-section .card {
+  flex: 0 0 calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #f3f5ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.resourse-section .card:hover {
+  transform: scale(1.05);
+}
+
+.resourse-section .card img {
+  width: 100px;
+  height: 100px;
+  border-bottom: 1px solid #ddd;
+}
+
+.resourse-section .card-content {
+  padding: 20px;
+}
+
+.resourse-section .card-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.resourse-section .card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.resourse-section a {
+color: #7564e4;
+position: relative;
+text-decoration: none;
+}
+
+.resourse-section a::before {
+content: '';
+position: absolute;
+width: 100%;
+height: 4px;
+border-radius: 4px;
+background-color: #18272F;
+bottom: 0;
+left: 0;
+transform-origin: right;
+transform: scaleX(0);
+transition: transform .3s ease-in-out;
+}
+
+.resourse-section a:hover::before {
+transform-origin: left;
+transform: scaleX(1);
+}
+
+
+@media (max-width: 768px) {
+  .resourse-section .card {
+      flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .resourse-section .card {
+      flex: 0 0 100%;
+  }
+} */
+
+
+
+/* special section Hemant below about us */
+/* .resourse-section .heading {
+  margin-top: 30px;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.resourse-section .card-container {
+  background-color: #efeeee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 0px;
+}
+
+.resourse-section .card {
+  flex: 0 0 calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #f3f5ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  align-items: center;  
+  justify-content: center;  
+}
+
+.resourse-section .card:hover {
+  transform: scale(1.05);
+}
+
+.resourse-section .card img {
+  width: 100px;
+  height: 100px;
+  border-bottom: 1px solid #ddd;
+}
+
+.resourse-section .card-content {
+  padding: 20px;
+}
+
+.resourse-section .card-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.resourse-section .card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.resourse-section a {
+  color: #7564e4;
+  position: relative;
+  text-decoration: none;
+}
+
+.resourse-section a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #18272F;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.resourse-section a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+  .resourse-section .card {
+      flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .resourse-section .card {
+      flex: 0 0 100%;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.resourse-section .heading {
+  margin-top: 30px;
+  font-weight: bolder;
+  font-size: 35px;
+  text-align: center; /* Center the text */
+}
+
+.resourse-section .card-container {
+  background-color: #efeeee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 0px;
+}
+
+.resourse-section .card {
+  flex: 0 0 calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #f3f5ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+}
+
+.resourse-section .card:hover {
+  transform: scale(1.05);
+}
+
+.resourse-section .card img {
+  width: 100px;
+  height: 100px;
+  border-bottom: 1px solid #ddd;
+}
+
+.resourse-section .card-content {
+  padding: 20px;
+  text-align: center; /* Center the text */
+}
+
+.resourse-section .card-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.resourse-section .card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.resourse-section a {
+  color: #e1e0ec;
+  position: relative;
+  text-decoration: none;
+}
+
+.resourse-section a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #18272F;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.resourse-section a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .resourse-section .card {
+      flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .resourse-section .card {
+      flex: 0 0 100%;
+  }
+}

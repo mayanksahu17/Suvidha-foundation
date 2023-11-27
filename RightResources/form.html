@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="form.css">
+    <link rel="javasript" href="form.js">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+   <title>Responsive Regisration Form </title>
+</head>
+<body>
+   <div class="details">
+        <header>Details</header>
+
+        <form action="#">
+
+            <div class="formfirst">
+                <div class="detailspersonal">
+                  <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Name*</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email*</label>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number*</label>
+                            <input type="number" placeholder="Enter mobile number" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Gender*</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+                    </div>
+              </div>
+
+            <div class="formfirst">
+                  <span class="title">GRE Scores</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Test Taken ?</label>
+                            <select required>
+                            <option disabled selected>Test Taken</option>
+                            <option>YES</option>
+                            <option>NO</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>GRE Quant</label>
+                            <input type="number" placeholder="Enter your Score " required>
+                        </div> 
+                        <div class="input-field">
+                          <label>GRE Verbal</label>
+                          <input type="number" placeholder="Enter your Score " required>
+                        </div>
+
+                        <div class="input-field">
+                          <label>GRE AWA</label>
+                          <input type="number" placeholder="Enter your Score " required>
+                        </div> 
+                </div> 
+            </div>
+            <div class="formfirst">
+              <span class="title">Academic Record</span>
+                  <div class="fields">
+                    <div class="input-field">
+                      <label>GPA Scale</label>
+                      <select required>
+                      <!-- <option disabled selected></option> -->
+                      <option>10</option>
+                      <option>100</option>
+                      </select>
+                    </div>
+                    <div class="input-field">
+                      <label>Your GPA</label>
+                      <input type="number" placeholder="Enter your GPA" required>
+                    </div>
+                    <div class="input-field">
+                      <label>Topper GPA</label>
+                      <input type="number" placeholder="Enter your Score " required>
+                    </div>
+                  </div>
+                </div>
+                <div class="formfirst">
+                  <div class="detailsaddress">
+                    <span class="title">English Score</span>
+                      <div class="fields">
+                        <div class="input-field">
+                          <label>TOEFL/IELTS</label>
+                          <select required>
+                          <!-- <option disabled selected>TOEFL</option> -->
+                          <option>TOEFL</option>
+                          <option>IELTS</option>
+                          </select>
+                        </div>
+                        <div class="input-field">
+                          <label>TOEFL</label>
+                          <input type="number" placeholder="Enter your Score" required>
+                        </div>
+                    </div>
+                </div>
+              </div>
+                <div class="formfirst">
+                  <span class="under">Undergrad Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                          <label>Undergrad School</label>
+                          <select required>
+                          <option disabled selected>school</option>
+                          <option>Indian Institute of Technology Madras	Chennai</option>
+                          <option>Indian Institute of Technology Bombay	Mumbai</option>
+                          <option>Indian Institute of Technology Kanpur</option>
+                          <option>IELTS</option>
+                          </select>
+                        </div>
+
+                        <div class="input-field">
+                          <label>Undergrad major</label>
+                          <select required>
+                          <option disabled selected>school</option>
+                          <option>Indian Institute of Technology Madras	Chennai</option>
+                          <option>Indian Institute of Technology Bombay	Mumbai</option>
+                          <option>Indian Institute of Technology Kanpur</option>
+                          <option>IELTS</option>
+                          </select>
+                        </div>
+
+                        <div class="input-field">
+                          <label>Year Of Graduation</label>
+                          <select required>
+                          <option disabled selected>year</option>
+                          <option>2020</option>
+                          <option>2021</option>
+                          <option>2022</option>
+                          <option>2023</option>
+                          </select>
+                        </div>
+                    </div>
+
+                </div> 
+            </div>
+            <div class="formfirst">
+                <div class="target course">
+                    <span class="title">Target Course</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                          <label>Postgrad Major</label>
+                          <select required>
+                          <option disabled selected>Major?</option>
+                          <option>Aerospace Engineering</option>
+                          <option>Biomedical</option>
+                          <option>Computer Science</option>
+                          <option>Business Analysis</option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="formfirst">
+                <div class="additional-info">
+                    <span class="title">Additional Info</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                          <label>Which term are you appling for</label>
+                          <select required>
+                          <!-- <option disabled selected>Fall?</option> -->
+                          <option>Fall</option>
+                          <option>Spring</option>                      
+                          </select>
+                        </div>
+                        <div class="input-field">
+                          <label>Target Year of Enrollment</label>
+                          <select required>
+                          <option disabled selected>2024</option>
+                          <option>2023</option>
+                          <option>2021</option>                      
+                          </select>
+                        </div>
+                        <div class="input-field">
+                          <label>Select Dream School</label>
+                          <select required>
+                          <option disabled selected>Georgia Institute of Technology</option>
+                          <option>California State University</option>
+                          <option>Auburn University</option>  
+                          <option>Iowa State University</option>                       
+                          </select>
+                        </div>
+                    </div>
+                </div>
+              </div> 
+              <div class="buttons">
+                <div class="backBtn">
+                    <i class="uil uil-navigator"></i>
+                    <span class="btnText">Back</span>
+                </div>
+                <button class="button" role="button">
+                    <span class="btnText">Submit</span>
+                    <i class="uil uil-navigator"></i>
+                </button>
+            </div>
+            </div>
+            <!-- <div class="buttons">
+              <div class="backBtn">
+                  <i class="uil uil-navigator"></i>
+                  <span class="btnText">Back</span>
+              </div>
+              <button class="button" role="button">
+                  <span class="btnText">Submit</span>
+                  <i class="uil uil-navigator"></i>
+              </button>
+          </div> -->
+            
+        </form>
+    </div>
+
+</body>
+</html>
