@@ -1606,3 +1606,11 @@ background-size:100%;
   width: 100% !important;
   height: 200px !important;
 }
+
+/* scroll top */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 26px;
+  display: none;
+}
