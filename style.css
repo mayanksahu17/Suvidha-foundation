@@ -4,6 +4,8 @@
     url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("opentype"),
     url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
 } */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
@@ -17,15 +19,21 @@ img {
   object-fit: cover;
 }
 .navbar-nav .nav-link.custom-nav-link {
-  color: #D8A883 !important;
-  /* color: #E68A43 !important; */
+  /* color: #D8A883 !important; */
+  color:  #bf5700!important;
   font-weight: bold;
-  font-family: display;
+  /* font-family: display; */
+   font-family: 'Libre Franklin', sans-serif;
 }
 .navbar-toggler-icon {
   background-color: #D8A883 !important;
   /* background-color: #ffa500 !important; */
 }
+
+/* .nav-item{
+  
+     font-family: 'Ubuntu', sans-serif;
+} */
 
 /* meet our mentor */
 .heading {
@@ -34,7 +42,7 @@ img {
   justify-content: center;
   align-items: center;
   margin-bottom: 1.6rem;
-  font-family: display;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 figure {
@@ -191,7 +199,7 @@ figure.photo.hover:before {
 .textname {
   text-align: center;
   color: #383a65;
-  font-family: display;
+  font-family: 'Libre Franklin', sans-serif;
   font-weight: 700;
   animation: pulse 5s infinite;
 }
@@ -202,25 +210,30 @@ figure.photo.hover:before {
 .textpara {
   color: rgb(71, 70, 70);
   text-align: center;
-  font-family: display;
+  /* font-family: display; */
+  font-family: 'Libre Franklin', sans-serif;
   /* font-family: "Quicksand", sans-serif; */
 }
 
 .about {
-  font-family: display;
-  background-color: #D8A883;
+  /* font-family: display; */
+  font-family: 'Libre Franklin', sans-serif;
+  /* background-color: #D8A883; */
+  background-color: #bf5700;
   /* background-color: #fbceb1; */
   padding: 2rem;
-  text-align: justify;
+  /* text-align: justify; */
   color: black;
+  font-size: 5%;
   line-height: 1.2; /* Adjust the line-height as needed */
-  letter-spacing: -1px; /* Adjust the letter-spacing as needed */
+  /* letter-spacing: -1px; Adjust the letter-spacing as needed */
 }
 
 
 .about-cards {
   padding-top: 5rem;
-  background: #daa06d;
+  /* background: #daa06d; */
+  background: rgb(255, 255, 255);
   border-radius: 20px;
   font-size: 20px;
 }
@@ -236,12 +249,15 @@ figure.photo.hover:before {
   /* font-family: Roboto Slab; */
 }
 .testimonial-slider {
-  background-color: #D8A883;
+  /* background-color: #D8A883; */
+  /* background-color: #f1d8c7; */
+  background-color: #fffbfb;
 /* background-color: #ecaf93; */
 padding: 2em 2em 2em;
 }
 .testimonial-title {
-  color: #D8A883;
+  /* color: #D8A883; */
+  color:  #bf5700;
 /* color: #af8266; */
 }
 .testimonial-title h2 {
@@ -255,11 +271,12 @@ height: 100%;
 
 .coro-prev,
 .coro-next {
-/* background-color: #af8266; */
-width: 1em;
-height: 1em;
+  background-color: #bf5700;
+/* background-color: #fa9447; */
+width: 3em;
+height: 3em;
 border-radius: 50%;
-line-height: 3em;
+line-height: 2em;
 color: rgba(9, 9, 9, 0.8);
 }
 
@@ -268,7 +285,8 @@ color: rgba(9, 9, 9, 0.8);
 @media (max-width: 780px) {
 .coro-prev,
 .coro-next {
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -757,9 +775,12 @@ display: grid;
 place-items: center;
 }
 .service-section-heading {
-  color: #D8A883;
+  /* color: #D8A883; */
+  /* color: #ee9b5c; */
+  background-color: #fa9447;
+  /* background-color: #bf5700; */
 /* color: #daa06d; */
-margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 .service-row {
 display: flex;
@@ -774,7 +795,8 @@ text-align: center;
 width: 100%;
 height: 100%;
 padding: 2em 1.5em;
-background: linear-gradient(#ffffff 50%, #D8A883 50%);
+/* background: linear-gradient(#ffffff 50%, #D8A883 50%); */
+background: linear-gradient(#ffffff 50%, #bf5700 50%);
 /* background: linear-gradient(#ffffff 50%, #daa06d 50%); */
 background-size: 100% 200%;
 background-position: 0 2.5%;
@@ -798,7 +820,8 @@ letter-spacing: 0.03em;
 text-align: justify;
 }
 .service-icon-wrapper {
-  background-color: #D8A883;
+  background-color: #f59750;
+  /* background-color: #D8A883; */
 /* background-color: #daa06d; */
 position: relative;
 margin: auto;
@@ -852,8 +875,9 @@ color: #f0f0f0;
 }
 .testimonial-container {
   width: 100%;
-  background: #D8A883;
-  /* background: #fbceb1; */
+  /* background: #D8A883; */
+  background: #bf5700;
+  /* background: #fa9447; */
   margin-top: 20px;
 }
 .p-comm {
@@ -865,6 +889,8 @@ color: #f0f0f0;
   /* background-color: #D8A883; */
   /* color: rgb(204, 134, 4); */
   font-weight: bold;
+  color: #ffffff;
+   font-family: 'Libre Franklin', sans-serif
 }
 .core-team {
   display: flex;
@@ -873,6 +899,7 @@ color: #f0f0f0;
   justify-content: center;
   min-height: 100vh;
   background: #D8A883;
+  /* background: #ffffff; */
   /* background: rgba(227, 194, 168, 1); */
 }
 
@@ -917,7 +944,8 @@ color: #f0f0f0;
 
 .card-core-team .back {
   transform: perspective(600px) rotateY(180deg);
-  background: rgba(216, 168, 131, 1);
+  /* background: rgba(216, 168, 131, 1); */
+  background: rgb(254, 254, 254);
   padding: 15px;
   color: #000;
   display: flex;
@@ -1116,8 +1144,8 @@ color: #f0f0f0;
 /* Student accomplishment  */
 
 .custom-container {
- background: #D8A883;
-  /* background: #fbceb1; */
+ /* background: #D8A883; */
+  background: #fffdfb
 }
 
 .sec-data {
@@ -1125,6 +1153,7 @@ color: #f0f0f0;
   height: 500px;
   display: flex;
   align-items: center;
+  font-family: 'Libre Franklin', sans-serif;
 }
 .uperwaliheading {
   /* color: #a06e6a; */
@@ -1133,8 +1162,8 @@ color: #f0f0f0;
 .headinghai {
   font-family: display;
   font-weight: 800;
-  color: #a06e6a;
-  /* color: #000; */
+  /* color: #a06e6a; */
+  color:#fa9447
 }
 
 .swiper-custom {
@@ -1158,6 +1187,7 @@ color: #f0f0f0;
   background: #e3ad96;
   border: 3px solid #d99b7d;
   border-radius: 20px;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 .card1::before {
@@ -1166,6 +1196,7 @@ color: #f0f0f0;
   width: 100%;
   height: 100%;
   background: #d99b7d;
+  /* background: #fa9447; */
   clip-path: circle(55% at 0 0);
   border-top-left-radius: 10px;
 }
@@ -1218,6 +1249,7 @@ color: #f0f0f0;
 .name-profession .profession {
   font-size: 15px;
   font-weight: 500;
+  font-family: 'Libre Franklin', sans-serif;
 }
 .card1 .rating {
   display: flex;
@@ -1591,9 +1623,10 @@ background-size:100%;
 /* Blog */
 
 .read-more-link {
-  background-color: orangered;
+  background-color: #bf5700;
   color: white;
-  border: 1px solid orangered;
+  align-items: center;
+  border: 1px solid rgb(153, 149, 147);
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
 }
