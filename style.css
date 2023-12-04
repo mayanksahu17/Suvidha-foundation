@@ -1632,3 +1632,57 @@ background-size:100%;
 	box-shadow: 2px 2px 3px #999;
   z-index:100;
 }
+
+
+
+/* Carousel home floating text */
+.carousel-container-home {
+  position: relative;
+}
+
+.fixed-content-carousel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+}
+
+.carousel-text{
+  color: #fff;
+}
+.carousel-btn-ielts{
+  font-size: 1rem;
+  margin: 10px;
+  border: 2px solid #000;
+  background-color: #ffdd32;
+  color: #000;
+}
+.carousel-btn-ielts:hover{
+  background-color: #ffd400;
+}
+
+.carousel-btn-profile{
+  font-size: 1rem;
+  margin: 10px;
+  border: 2px solid #000;
+  background-color: rgb(255, 174, 25);
+  color: #000;
+}
+.carousel-btn-profile:hover{
+  background-color: rgb(227, 149, 3);
+}
+.carousel-container-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+
