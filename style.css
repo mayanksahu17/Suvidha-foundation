@@ -16,7 +16,6 @@ img {
   height: 550px;
   object-fit: cover;
 }
-
 .navbar-nav .nav-link.custom-nav-link {
   color: #D8A883 !important;
   /* color: #E68A43 !important; */
@@ -65,7 +64,6 @@ figure {
   margin-left: 2rem;
   margin-right: 2rem;
 }
-
 figure.photo {
   font-family: display;
   position: relative;
