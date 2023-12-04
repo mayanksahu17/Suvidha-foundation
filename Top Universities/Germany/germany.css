@@ -766,6 +766,7 @@ background-size:100%;
   font-family: 'Libre Franklin', sans-serif
 }
 .p-comm {
+  text-align: justify;
   font-size: 0.9rem;
   gap: 0.1rem;
 }

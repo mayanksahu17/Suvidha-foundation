@@ -18,7 +18,6 @@ img {
   height: 550px;
   object-fit: cover;
 }
-
 .navbar-nav .nav-link.custom-nav-link {
   /* color: #D8A883 !important; */
   color:  #bf5700!important;
@@ -73,7 +72,6 @@ figure {
   margin-left: 2rem;
   margin-right: 2rem;
 }
-
 figure.photo {
   font-family: display;
   position: relative;
@@ -819,6 +817,7 @@ color: #000000;
 font-size: 15px;
 line-height: 1.6;
 letter-spacing: 0.03em;
+text-align: justify;
 }
 .service-icon-wrapper {
   background-color: #f59750;
@@ -882,6 +881,7 @@ color: #f0f0f0;
   margin-top: 20px;
 }
 .p-comm {
+  text-align: justify;
   font-size: 0.9rem;
   gap: 0.1rem;
 }
@@ -1643,7 +1643,79 @@ background-size:100%;
 /* scroll top */
 #btn-back-to-top {
   position: fixed;
-  bottom: 80px;
-  right: 26px;
+  bottom:140px;
+  right: 23px;
   display: none;
+  width:50px;
+	height:50px;
 }
+
+/* whatsapp button */
+.floating{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom: 80px;
+	right:22px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+
+
+/* Carousel home floating text */
+.carousel-container-home {
+  position: relative;
+}
+
+.fixed-content-carousel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+}
+
+.carousel-text{
+  color: #fff;
+}
+.carousel-btn-ielts{
+  font-size: 1rem;
+  margin: 10px;
+  border: 2px solid #000;
+  background-color: #ffdd32;
+  color: #000;
+}
+.carousel-btn-ielts:hover{
+  background-color: #ffd400;
+}
+
+.carousel-btn-profile{
+  font-size: 1rem;
+  margin: 10px;
+  border: 2px solid #000;
+  background-color: rgb(255, 174, 25);
+  color: #000;
+}
+.carousel-btn-profile:hover{
+  background-color: rgb(227, 149, 3);
+}
+.carousel-container-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+
