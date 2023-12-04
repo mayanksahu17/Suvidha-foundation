@@ -4,7 +4,7 @@ img {
     object-fit: cover;
 } 
 .custom-nav-link {
-  color: #FFA500 !important;
+  color: #bf5007 !important;
   font-weight: bold;
 }
 .custom-nav-link:hover{
@@ -12,14 +12,14 @@ color: brown !important;
 font-weight: bold;
 }
 .navbar-toggler-icon {
-    background-color: #FFA500; /* Change this to the desired color */
+    background-color: #bf5007; /* Change this to the desired color */
 }
 .desc{
   position: absolute;
   z-index: 10;
 }
 .custom-bg {
-    background-color: #eba063; /* Light orange background color */
+    background-color: #bf5007; /* Light orange background color */
 }
 
   
@@ -29,7 +29,7 @@ font-weight: bold;
     font-family: Roboto Slab;
   }
   .testimonial-slider {
-  background-color: #ecaf93;
+  background-color: #ffffff;
   padding: 2em 2em 2em;
   }
   .testimonial-title {
@@ -47,11 +47,13 @@ font-weight: bold;
   .coro-prev,
   .coro-next {
   /* background-color: #af8266; */
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  line-height: 3em;
-  color: rgba(9, 9, 9, 0.8);
+  background-color: #bf5700;
+/* background-color: #fa9447; */
+width: 3em;
+height: 3em;
+border-radius: 50%;
+line-height: 2em;
+color: rgba(9, 9, 9, 0.8);
   }
   
   
@@ -681,7 +683,8 @@ color:white;
   font-size: 18px;
 }
 h1, h2, h3, h4, h5, h6 {
-  color: #4b505e;
+  color: #bf5007;
+  font-family: 'Libre Franklin', sans-serif;
 }
 .new_footer_top .f_widget.about-widget .f_list li a {
   color: #6a7695;
@@ -758,8 +761,9 @@ background-size:100%;
 }
 .testimonial-container {
   width: 100%;
-  background: #fbceb1;
+  background: #bf5007;
   margin-top: 100px;
+  font-family: 'Libre Franklin', sans-serif
 }
 .p-comm {
   font-size: 0.9rem;
@@ -819,7 +823,7 @@ background-size:100%;
 
 .card-core-team .back {
   transform: perspective(600px) rotateY(180deg);
-  background: rgba(216, 168, 131, 1);
+  background: rgb(255, 255, 255);
   padding: 15px;
   color: #000;
   display: flex;
