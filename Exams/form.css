@@ -1,0 +1,34 @@
+body {
+    padding: 20px;
+    background-color: #e3ad96;
+  }
+
+  .container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    color: #e3ad96;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  /* Style for form groups */
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  /* Style for submit button */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }

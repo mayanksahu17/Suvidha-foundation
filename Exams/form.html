@@ -6,42 +6,8 @@
   <title>Application Form</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      padding: 20px;
-      background-color: #e3ad96;
-    }
-
-    .container {
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      color: #e3ad96;
-    }
-
-    label {
-      font-weight: bold;
-    }
-
-    /* Style for form groups */
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    /* Style for submit button */
-    .btn-primary {
-      background-color: #007bff;
-      border: none;
-    }
-
-    .btn-primary:hover {
-      background-color: #0056b3;
-    }
-  </style>
+  <link rel="stylesheet" href="form.css">
+  <script src="form.js"></script>
 </head>
 <body>
 
@@ -50,7 +16,7 @@
   <form name="submit-to-google-sheet">
     <!-- Personal Details Section -->
     <div class="form-group">
-      <h4>1) Personal Details</h4>
+      <h4>1. Personal Details</h4>
       <label for="name">Name:</label>
       <input type="text" class="form-control" id="name" name="name" required>
     </div>
@@ -74,7 +40,7 @@
 
     <!-- GRE Scores Section -->
     <div class="form-group">
-      <h4>2) GRE Scores</h4>
+      <h4>2. GRE Scores</h4>
       <label for="testTaken">GRE Test Taken?</label>
       <select class="form-control" id="testTaken" name="testTaken" required>
         <option value="yes">Yes</option>
@@ -96,7 +62,7 @@
 
     <!-- English Scores Section -->
     <div class="form-group">
-      <h4>3) English Scores</h4>
+      <h4>3. English Scores</h4>
       <label for="ielts">IELTS:</label>
       <input type="text" class="form-control" id="ielts" name="ielts">
     </div>
@@ -107,7 +73,7 @@
 
     <!-- Academic Record Section -->
     <div class="form-group">
-      <h4>4) Academic Record</h4>
+      <h4>4. Academic Record</h4>
       <label for="gpaScale">GPA Scale:</label>
       <input type="text" class="form-control" id="gpaScale" name="gpaScale">
     </div>
@@ -122,7 +88,7 @@
 
     <!-- Undergrad Details Section -->
     <div class="form-group">
-      <h4>5) Undergrad Details</h4>
+      <h4>5. Undergrad Details</h4>
       <label for="undergradSchool">Undergrad School:</label>
       <input type="text" class="form-control" id="undergradSchool" name="undergradSchool">
     </div>
@@ -137,14 +103,14 @@
 
     <!-- Target Course Section -->
     <div class="form-group">
-      <h4>6) Target Course</h4>
+      <h4>6. Target Course</h4>
       <label for="postgradMajor">Postgrad Major:</label>
       <input type="text" class="form-control" id="postgradMajor" name="postgradMajor">
     </div>
 
     <!-- Additional Info Section -->
     <div class="form-group">
-      <h4>7) Additional Info</h4>
+      <h4>7. Additional Info</h4>
       <label for="enrollmentTerm">Which term are you applying for?</label>
       <select class="form-control" id="enrollmentTerm" name="enrollmentTerm">
         <option value="fall">Fall</option>
@@ -163,17 +129,7 @@
     <!-- Submit Button -->
     <button type="submit" class="btn btn-success">Submit</button>
   </form>
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxbQPxVyJRWy6FIY-Hc5MhGRmowBMB9tQdTnSa0_4Cs5rOVznLLkUNcJASQ9YpckCyYTg/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+ 
   
 </div>
 
