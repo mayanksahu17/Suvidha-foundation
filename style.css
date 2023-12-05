@@ -293,6 +293,13 @@ color: rgba(9, 9, 9, 0.8);
   width: 40px; */
 
 }
+.carousel-item img{
+  max-width: 100%;
+  height:auto;
+}
+.carousel-text{
+  font-size:large;
+}
 }
 
 /* Styles for larger screens */ 
