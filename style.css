@@ -290,6 +290,13 @@ color: rgba(9, 9, 9, 0.8);
   top: 50%;
   transform: translateY(-50%);
 }
+.carousel-item img{
+  max-width: 100%;
+  height:auto;
+}
+.carousel-text{
+  font-size:large;
+}
 }
 
 /* Styles for larger screens */ 
