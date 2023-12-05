@@ -286,7 +286,7 @@ color: rgba(9, 9, 9, 0.8);
 .coro-prev,
 .coro-next {
   position: absolute; 
-  top: 60%;
+  top: 50%;
   transform: translateY(-50%);
   /* height: 40px;
   width: 40px; */
