@@ -1,0 +1,90 @@
+body {
+  padding: 20px;
+  background-color: #e3ad96;
+  font-family: Arial, sans-serif;
+}
+
+.container-contact1002 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-contact100 {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.part2 {
+  margin-bottom: 20px;
+}
+
+.part2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact100-form {
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact100-form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.formkit-field {
+  margin-bottom: 15px;
+}
+
+.formkit-input,
+.formkit-select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 2px solid #e3e3e3;
+  border-radius: 4px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.contact100-form-btn {
+  text-align: center;
+}
+
+/* Adjust button styles */
+.contact100-form-btn button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact100-form-btn button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .container-contact1002 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-contact100 {
+    order: 2; /* Change the order to display at the bottom */
+    margin-bottom: 20px;
+  }
+
+  .wrap-contact100 {
+    width: 100%;
+    max-width: 600px;
+    order: 1; /* Change the order to display at the top */
+    margin-bottom: 20px;
+  }
+}

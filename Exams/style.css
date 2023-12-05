@@ -5,7 +5,8 @@
     padding: 2rem;
     padding-left: 5rem;
     padding-right: 5rem;
-    background: #f5f5dc;
+    /* background: #f5f5dc; */
+    background:  #bf5700;
     flex-direction: column;
     gap: 2rem;
 }
@@ -36,6 +37,7 @@
     background: white;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'Libre Franklin', sans-serif;
 }
 .text-content-2,.text-content{
     color:black;
@@ -48,14 +50,15 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    background-color: rgb(101, 165, 4);
-    color:whitesmoke;
+    background-color: rgb(255, 255, 255);
+    color:#bf5700;
     padding: 1rem;
 }
 @media screen and (max-width: 700px){
     .outer-text-container{
         padding-left: 1rem;
         padding-right: 1rem;
+        font-family: 'Libre Franklin', sans-serif;
     }
 } 
 @media screen and (max-width: 400px){

@@ -4,14 +4,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Libre Franklin', sans-serif;
 }
 body{
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background:rgb(247, 180, 79) ;
+    background: #bf5700 ;
+    
 }
 .details{
     position: relative;
