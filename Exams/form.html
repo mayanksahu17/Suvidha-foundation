@@ -47,7 +47,7 @@
 
 <div class="container">
   <h2>Application Form</h2>
-  <form>
+  <form name="submit-to-google-sheet">
     <!-- Personal Details Section -->
     <div class="form-group">
       <h4>1) Personal Details</h4>
@@ -163,6 +163,18 @@
     <!-- Submit Button -->
     <button type="submit" class="btn btn-success">Submit</button>
   </form>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxbQPxVyJRWy6FIY-Hc5MhGRmowBMB9tQdTnSa0_4Cs5rOVznLLkUNcJASQ9YpckCyYTg/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
 </div>
 
 <!-- Bootstrap JS and Popper.js -->
