@@ -285,8 +285,7 @@ color: rgba(9, 9, 9, 0.8);
 @media (max-width: 780px) {
 .coro-prev,
 .coro-next {
-  /* position: absolute; */
-  position: relative;
+  position: absolute; 
   top: 50%;
   transform: translateY(-50%);
 }
@@ -1636,6 +1635,10 @@ background-size:100%;
   border: 1px solid rgb(153, 149, 147);
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
+}
+.blog-heading{
+  color:#bf5700;
+  font-weight:bold;
 }
 
 .read-more-link:hover {
