@@ -321,3 +321,118 @@
   
   
 
+
+
+  /* responsive queries */
+  /*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+/* ... (No changes here) ... */
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+/* ... (No changes here) ... */
+
+/*---------------------------------------------*/
+/* Add responsive styles for body and html */
+@media only screen and (max-width: 768px) {
+  body, html {
+      font-size: 14px; /* Adjust the base font size for smaller screens */
+  }
+}
+
+/*---------------------------------------------*/
+/* Add responsive styles for links */
+@media only screen and (max-width: 768px) {
+  a {
+      font-size: 12px; /* Adjust link font size for smaller screens */
+  }
+}
+
+/*---------------------------------------------*/
+/* Add responsive styles for paragraphs */
+@media only screen and (max-width: 768px) {
+  p {
+      font-size: 12px; /* Adjust paragraph font size for smaller screens */
+  }
+}
+
+/*---------------------------------------------*/
+/* Add responsive styles for container */
+@media only screen and (max-width: 768px) {
+  .container {
+      max-width: 100%; /* Make the container full width on smaller screens */
+  }
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Contact ]*/
+
+/* ... (No changes here) ... */
+
+/*---------------------------------------------*/
+/* Add responsive styles for container-contact1002 */
+@media only screen and (max-width: 768px) {
+  .container-contact1002 {
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: auto;
+       /* Change flex direction to column on smaller screens */
+  }
+  .container-contact1002 h1{
+    text-align: center;
+  }
+  .container-contact1002 p{
+    text-align: center;
+  }
+
+  .container-contact1002 img {
+      width: 70%; /* Make the image full width on smaller screens */
+      height: 40%;
+      margin-left: 35px;
+      /* margin-left: 30px; */
+       /* Remove left margin on smaller screens */
+      padding: 20px; /* Adjust padding on smaller screens */
+  }
+
+  .container-contact1002 p {
+      margin-left: 0; /* Remove left margin on smaller screens */
+  }
+
+  .container-contact100 h1 {
+      margin-left: 0; /* Remove left margin on smaller screens */
+  }
+}
+
+/*---------------------------------------------*/
+/* Add responsive styles for wrap-contact100 */
+@media only screen and (max-width: 768px) {
+  .wrap-contact100 {
+      width: 100vw; /* Make the wrap-contact100 full width on smaller screens */
+      padding: 10px;
+      /* margin-left: 0px; */
+       /* Adjust padding on smaller screens */
+  }
+  .formkit-select{
+    margin-left: 0px;
+  }
+}
+
+/*---------------------------------------------*/
+/* Add responsive styles for contact100-form-title */
+@media only screen and (max-width: 768px) {
+  .contact100-form-title {
+      font-size: 24px; /* Adjust title font size for smaller screens */
+  }
+}
+
+/*---------------------------------------------*/
+/* Add responsive styles for contact100-form-btn */
+@media only screen and (max-width: 768px) {
+  .contact100-form-btn {
+      font-size: 16px; /* Adjust button font size for smaller screens */
+  }
+}
