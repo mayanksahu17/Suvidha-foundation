@@ -1632,3 +1632,22 @@ background-size:100%;
 	box-shadow: 2px 2px 3px #999;
   z-index:100;
 }
+
+
+/* special section */
+.img1{
+  width: 100%;
+  height:500px;
+}
+@media (max-width: 780px){
+  .img1{
+    width: 100%;
+    height:250px;
+  }
+}
+@media (max-width: 430px){
+  .img1{
+    width: 100%;
+    height:140px;
+  }
+}
