@@ -286,8 +286,11 @@ color: rgba(9, 9, 9, 0.8);
 .coro-prev,
 .coro-next {
   position: absolute; 
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
+  /* height: 40px;
+  width: 40px; */
+
 }
 .carousel-item img{
   max-width: 100%;
@@ -1727,5 +1730,3 @@ background-size:100%;
   background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
   z-index: 1;
 }
-
-
